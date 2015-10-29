@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523199841BE1E51400C6BAA5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523199831BE1E51400C6BAA5 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		524AA38B1BC15A4C00965637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AA38A1BC15A4C00965637 /* AppDelegate.swift */; };
 		524AA38D1BC15A4C00965637 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AA38C1BC15A4C00965637 /* ViewController.swift */; };
 		524AA3901BC15A4C00965637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524AA38E1BC15A4C00965637 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		523199831BE1E51400C6BAA5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		524AA3871BC15A4C00965637 /* PiccollectTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiccollectTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524AA38A1BC15A4C00965637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		524AA38C1BC15A4C00965637 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		524AA3891BC15A4C00965637 /* PiccollectTest */ = {
 			isa = PBXGroup;
 			children = (
+				523199831BE1E51400C6BAA5 /* DetailViewController.swift */,
 				524AA38A1BC15A4C00965637 /* AppDelegate.swift */,
 				524AA38C1BC15A4C00965637 /* ViewController.swift */,
 				526B79B71BD3D27A00C27CB7 /* Meal.swift */,
@@ -274,6 +277,7 @@
 				524AA38B1BC15A4C00965637 /* AppDelegate.swift in Sources */,
 				52F1832D1BDCA59900DAF238 /* MealTableViewController.swift in Sources */,
 				52F1832B1BDB732800DAF238 /* MealTableViewCell.swift in Sources */,
+				523199841BE1E51400C6BAA5 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--姆姆情色ＡＰＰ-->
+        <!--相簿-->
         <scene sceneID="Xol-42-HB4">
             <objects>
                 <tableViewController id="UOV-jH-LGx" customClass="MealTableViewController" customModule="PiccollectTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,19 +22,19 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="fGS-rl-Stg">
-                                            <rect key="frame" x="8" y="2" width="85" height="85"/>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQN-tv-vGM">
                                             <rect key="frame" x="101" y="8" width="491" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1D-Li-ert" customClass="RatingControl" customModule="PiccollectTest" customModuleProvider="target">
                                             <rect key="frame" x="101" y="37" width="240" height="44"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="fGS-rl-Stg">
+                                            <rect key="frame" x="8" y="2" width="85" height="85"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier="">
@@ -44,6 +44,7 @@
                                     <outlet property="nameLabel" destination="mQN-tv-vGM" id="KX8-Vu-Lrd"/>
                                     <outlet property="photoImageView" destination="fGS-rl-Stg" id="6ft-SU-hnT"/>
                                     <outlet property="ratingControl" destination="a1D-Li-ert" id="Nst-M4-o4H"/>
+                                    <segue destination="sN6-LJ-yal" kind="show" identifier="ShowDetail" id="Mwk-yV-hoE"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -52,7 +53,7 @@
                             <outlet property="delegate" destination="UOV-jH-LGx" id="MYc-fh-lEb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="姆姆情色ＡＰＰ" id="Le1-UT-Vun">
+                    <navigationItem key="navigationItem" title="相簿" id="Le1-UT-Vun">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wzo-YB-MZU">
                             <connections>
                                 <segue destination="Jul-pB-e2I" kind="presentation" identifier="AddItem" id="XTp-43-rtp"/>
@@ -64,7 +65,7 @@
             </objects>
             <point key="canvasLocation" x="680" y="327"/>
         </scene>
-        <!--建立新的姆姆-->
+        <!--建立新的樣式-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PiccollectTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,18 +80,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-fq-1rG">
                                 <rect key="frame" x="20" y="81" width="560" height="451"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姆姆名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz1-lP-XAA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="樣式名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz1-lP-XAA">
                                         <rect key="frame" x="246" y="0.0" width="68" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="輸入姆姆的名字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VyR-ba-eK0">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="輸入名字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VyR-ba-eK0">
                                         <rect key="frame" x="0.0" y="33" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Z1d-Q1-6OL">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Z1d-Q1-6OL">
                                         <rect key="frame" x="120" y="75" width="320" height="320"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -118,7 +119,7 @@
                             <constraint firstItem="gxN-fq-1rG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zL5-DP-U67"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="建立新的姆姆" id="bJ4-Xd-gWp">
+                    <navigationItem key="navigationItem" title="建立新的樣式" id="bJ4-Xd-gWp">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="yMy-Ip-rit">
                             <connections>
                                 <action selector="cancel:" destination="BYZ-38-t0r" id="DZq-yb-kES"/>
@@ -147,6 +148,48 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2157" y="327"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Sno-Fi-g9h">
+            <objects>
+                <viewController id="sN6-LJ-yal" customClass="DetailViewController" customModule="PiccollectTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ASK-uv-uft"/>
+                        <viewControllerLayoutGuide type="bottom" id="dcc-Id-jKf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z3f-Hc-GWI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kXZ-Fw-xqd">
+                                <rect key="frame" x="3" y="64" width="594" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="fFx-MF-VdE">
+                                        <rect key="frame" x="0.0" y="0.0" width="594" height="500"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="500" id="Jzh-vB-5h7"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fFx-MF-VdE" firstAttribute="leading" secondItem="kXZ-Fw-xqd" secondAttribute="leading" id="vkC-SV-j7d"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kXZ-Fw-xqd" firstAttribute="leading" secondItem="z3f-Hc-GWI" secondAttribute="leadingMargin" constant="-17" id="LcK-OH-SdG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kXZ-Fw-xqd" secondAttribute="trailing" constant="-17" id="nUi-f8-lLe"/>
+                            <constraint firstItem="kXZ-Fw-xqd" firstAttribute="top" secondItem="ASK-uv-uft" secondAttribute="bottom" id="noT-Lf-MWJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mImageView" destination="fFx-MF-VdE" id="jYb-lf-m2K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gzy-rP-18g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="1090"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3II-Fc-MbX">
