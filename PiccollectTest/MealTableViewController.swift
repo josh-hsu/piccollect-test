@@ -21,17 +21,43 @@ class MealTableViewController: UITableViewController {
         loadSampleMeals()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.hidesBarsOnTap = false
+    }
+    
     func loadSampleMeals() {
         let photo1 = UIImage(named: "meal1")!
-        let meal1 = Meal(name: "Caprese Salad", photo: photo1, rating: 4)!
+        let meal1 = Meal(name: "大國主1號", photo: photo1, rating: 4)!
         
         let photo2 = UIImage(named: "meal2")!
-        let meal2 = Meal(name: "Chicken and Potatoes", photo: photo2, rating: 5)!
+        let meal2 = Meal(name: "大國主2號", photo: photo2, rating: 5)!
         
         let photo3 = UIImage(named: "meal3")!
-        let meal3 = Meal(name: "Pasta with Meatballs", photo: photo3, rating: 3)!
+        let meal3 = Meal(name: "大國主3號", photo: photo3, rating: 3)!
         
-        meals += [meal1, meal2, meal3]
+        let photo4 = UIImage(named: "meal4")!
+        let meal4 = Meal(name: "大國主4號", photo: photo4, rating: 3)!
+        
+        let photo5 = UIImage(named: "meal5")!
+        let meal5 = Meal(name: "大國主5號", photo: photo5, rating: 3)!
+        
+        let photo6 = UIImage(named: "meal6")!
+        let meal6 = Meal(name: "大國主6號", photo: photo6, rating: 3)!
+        
+        let photo7 = UIImage(named: "meal7")!
+        let meal7 = Meal(name: "大國主7號", photo: photo7, rating: 3)!
+        
+        let photo8 = UIImage(named: "meal8")!
+        let meal8 = Meal(name: "大國主8號", photo: photo8, rating: 3)!
+        
+        let photo9 = UIImage(named: "meal9")!
+        let meal9 = Meal(name: "大國主9號", photo: photo9, rating: 3)!
+        
+        let photo10 = UIImage(named: "meal10")!
+        let meal10 = Meal(name: "大國主10號", photo: photo10, rating: 3)!
+        
+        meals += [meal1, meal2, meal3, meal4, meal5, meal6, meal7, meal8, meal9, meal10]
     }
 
     override func didReceiveMemoryWarning() {

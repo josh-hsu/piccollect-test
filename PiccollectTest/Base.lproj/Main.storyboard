@@ -11,15 +11,15 @@
             <objects>
                 <tableViewController id="UOV-jH-LGx" customClass="MealTableViewController" customModule="PiccollectTest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="R9c-ZK-yKU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="90" id="2v4-IB-rcg" customClass="MealTableViewCell" customModule="PiccollectTest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="90"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2v4-IB-rcg" id="577-hl-XUK">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQN-tv-vGM">
@@ -60,10 +60,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlP-hT-i06" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680" y="327"/>
+            <point key="canvasLocation" x="391.5" y="326.5"/>
         </scene>
         <!--建立新的樣式-->
         <scene sceneID="tne-QT-ifu">
@@ -74,25 +75,25 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-fq-1rG">
-                                <rect key="frame" x="20" y="81" width="560" height="451"/>
+                                <rect key="frame" x="16" y="81" width="343" height="451"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="樣式名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz1-lP-XAA">
-                                        <rect key="frame" x="246" y="0.0" width="68" height="21"/>
+                                        <rect key="frame" x="138" y="0.0" width="68" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="輸入名字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VyR-ba-eK0">
-                                        <rect key="frame" x="0.0" y="33" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="33" width="343" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Z1d-Q1-6OL">
-                                        <rect key="frame" x="120" y="75" width="320" height="320"/>
+                                        <rect key="frame" x="12" y="75" width="320" height="320"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Z1d-Q1-6OL" secondAttribute="height" multiplier="1:1" id="Cka-Rp-dkg"/>
@@ -102,7 +103,7 @@
                                         </connections>
                                     </imageView>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="280" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="SbK-db-xRk" customClass="RatingControl" customModule="PiccollectTest" customModuleProvider="target">
-                                        <rect key="frame" x="140" y="407" width="280" height="44"/>
+                                        <rect key="frame" x="32" y="407" width="280" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
@@ -120,12 +121,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="建立新的樣式" id="bJ4-Xd-gWp">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="yMy-Ip-rit">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="yMy-Ip-rit">
                             <connections>
                                 <action selector="cancel:" destination="BYZ-38-t0r" id="DZq-yb-kES"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mGs-Pn-Sd3">
+                        <barButtonItem key="rightBarButtonItem" title="儲存" id="mGs-Pn-Sd3">
                             <connections>
                                 <segue destination="QTd-82-O13" kind="unwind" unwindAction="unwindToMealList:" id="jPY-bh-3wU"/>
                             </connections>
@@ -147,9 +148,9 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2157" y="327"/>
+            <point key="canvasLocation" x="1459.5" y="326.5"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--相片(1/3)-->
         <scene sceneID="Sno-Fi-g9h">
             <objects>
                 <viewController id="sN6-LJ-yal" customClass="DetailViewController" customModule="PiccollectTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -158,46 +159,39 @@
                         <viewControllerLayoutGuide type="bottom" id="dcc-Id-jKf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="z3f-Hc-GWI">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ywE-yp-keh">
-                                <rect key="frame" x="0.0" y="63" width="600" height="537"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFx-MF-VdE">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="537"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="fFx-MF-VdE" firstAttribute="top" secondItem="ywE-yp-keh" secondAttribute="top" id="CpD-o4-9eg"/>
-                                    <constraint firstAttribute="bottom" secondItem="fFx-MF-VdE" secondAttribute="bottom" id="D1n-YQ-pSE"/>
-                                    <constraint firstItem="fFx-MF-VdE" firstAttribute="leading" secondItem="ywE-yp-keh" secondAttribute="leading" id="fil-zk-0es"/>
-                                    <constraint firstAttribute="trailing" secondItem="fFx-MF-VdE" secondAttribute="trailing" id="oth-Bv-ce2"/>
-                                </constraints>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywE-yp-keh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ywE-yp-keh" firstAttribute="leading" secondItem="z3f-Hc-GWI" secondAttribute="leading" id="8KP-xk-ZMP"/>
-                            <constraint firstAttribute="trailing" secondItem="ywE-yp-keh" secondAttribute="trailing" id="Vgo-vs-5u0"/>
-                            <constraint firstItem="dcc-Id-jKf" firstAttribute="top" secondItem="ywE-yp-keh" secondAttribute="bottom" id="Wxq-1w-zWN"/>
-                            <constraint firstItem="ywE-yp-keh" firstAttribute="top" secondItem="z3f-Hc-GWI" secondAttribute="top" id="zlX-u1-hrO"/>
+                            <constraint firstAttribute="trailing" secondItem="ywE-yp-keh" secondAttribute="trailing" id="Mrf-So-51m"/>
+                            <constraint firstItem="dcc-Id-jKf" firstAttribute="top" secondItem="ywE-yp-keh" secondAttribute="bottom" id="Uu1-CS-Aht"/>
+                            <constraint firstItem="ywE-yp-keh" firstAttribute="top" secondItem="z3f-Hc-GWI" secondAttribute="top" id="qte-pk-aaZ"/>
+                            <constraint firstItem="ywE-yp-keh" firstAttribute="leading" secondItem="z3f-Hc-GWI" secondAttribute="leading" id="wc2-8P-4tV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="相片(1/3)" id="kAg-rt-RoY">
+                        <barButtonItem key="rightBarButtonItem" title="編輯" id="ue3-AL-UUe"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="mImageView" destination="fFx-MF-VdE" id="jYb-lf-m2K"/>
                         <outlet property="mScrollView" destination="ywE-yp-keh" id="Stc-I5-3Vl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gzy-rP-18g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1417" y="1090"/>
+            <point key="canvasLocation" x="391.5" y="1138.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3II-Fc-MbX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gll-SF-r9T" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cJu-5Z-GXT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -227,7 +221,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pp-xS-zPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1417" y="327"/>
+            <point key="canvasLocation" x="901.5" y="326.5"/>
         </scene>
     </scenes>
     <resources>
