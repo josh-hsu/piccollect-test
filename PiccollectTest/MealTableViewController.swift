@@ -32,7 +32,7 @@ class MealTableViewController: UITableViewController {
         for(var i = 1; i <= imageCount; i++) {
             let imageAssetName = String(format: "meal%i", i)
             let imageTitleName = String(format: "大國主%i", i)
-            print("Now loading meal asset: ", imageAssetName)
+            print("Now loading meal with asset: ", imageAssetName)
             
             let imagePhoto = UIImage(named: imageAssetName)
             let meal = Meal(name: imageTitleName, photo: imagePhoto, rating: 4)!
